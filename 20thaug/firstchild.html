@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.p:first-child {
+  background-color: yellow;
+  color: aqua;
+  padding: 10px;
+}
+.p1:first-of-type{
+    background-color: blue;
+}
+h6:empty{
+    width:100px;
+    height: 20px;
+    background-color: aquamarine;
+  }
+
+  .p2:last-of-type {
+    background: #ff0000;
+  }
+
+  .p3:last-child {
+    background:pink;
+  }
+  .div:last-child{
+    background-color: coral;
+  }
+
+  div ~ p {
+    background-color:blueviolet;
+  }
+</style>
+</head>
+<body>
+
+<p class="p">para 1.</p>
+<p class="p">para 2.</p>
+
+<div>
+  <p class="p">para 3</p>
+  <p class="p">para 4.</p>
+</div>
+
+<div>
+    <p class="p1">hello</p>
+    <p class="p1">hello</p>
+    <p class="p1">hello</p>
+    <p class="p1">hello</p>
+    <p class="p1">hello</p>
+
+</div>
+<h6></h6>
+<div>
+    <h1>heading</h1>
+    <p class="p2">The first paragraph.</p>
+    <p class="p2">The second paragraph.</p>
+    <p class="p2">The third paragraph.</p>
+    <p class="p2">The fourth paragraph.</p>
+</div>
+<div class="div">
+<p class="p3">The first paragraph.</p>
+<p class="p3">The second paragraph.</p>
+<p class="p3">The third paragraph.</p>
+<p class="p3">The fourth paragraph.</p>
+</div>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>para</code>
+<p>Paragraph 4.</p>
+<span>span</span>
+<p>para</p>
+</body>
+</html>
