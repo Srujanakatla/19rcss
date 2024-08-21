@@ -39,3 +39,7 @@ div{
     text-decoration: underline 2px green;
     text-decoration: overline;
 }
+
+div ~ p {
+    background-color: yellow;
+  }

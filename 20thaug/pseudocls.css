@@ -45,19 +45,21 @@ input:enabled{
     padding: 10px;
 }
 
-/* p:first-of-type {
+p:first-child {
        background-color: yellow;
-} */
+}
 
-p:first-of-type {
-    background: red;
-  } 
+/* .first:first-of-type {
+    background: red; */
+  
   h6:empty{
     width:100px;
     height: 20px;
     background-color: aquamarine;
   }
-
+  span:last-child {
+    background: #ff0000;
+  }
   h3:last-child{
             background-color: chartreuse;
   }
