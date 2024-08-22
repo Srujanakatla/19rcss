@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ::before example */
+        p::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* ::after example */
+        p::after {
+            content: " [Read more]";
+            color: green;
+        }
+
+        /* ::first-letter example */
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+
+        /* ::first-line example */
+        p::first-line {
+            font-weight: bold;
+        }
+        h1::first-letter{
+            color: aqua;
+            background-color: palevioletred;
+            padding: 20px;
+            border-radius: 10%;
+        }
+        h1::first-line{
+             background-color: blueviolet; 
+        }
+        h1::before{
+            content: "this is me";
+        }
+        h1::after{
+            content: "give me light";
+        }
+        h2::first-letter{
+            color: aqua;
+            background-color:brown;
+            padding: 20px;
+            border-radius: 10%;
+        }
+        h2::first-line{
+             background-color:darkgreen; 
+        }
+        h2::before{
+            content: "this is me ";
+        }
+        h2::after{
+            content: " read more";
+        }
+        h2::backdrop{
+            text-decoration: underline;
+        }
+        ::marker { 
+            color:chocolate;
+            background-color: paleturquoise;
+            padding: 30px;
+            font-size: 40px;
+          }
+          a:link{
+            background-color: chartreuse;
+            font-size:larger;
+          }
+          /* :not(p){
+            color:crimson;
+          } */
+    </style>
+</head>
+<body>
+    <p>This is an example paragraph pseudo-elements in CSS.</p>
+    <h2>srujana katla<a href="https://www.amazon.in/s?k=amazon+prime+membership&adgrpid=1320515078795879&hvadid=82532458763367&hvbmt=bb&hvdev=c&hvlocphy=154949&hvnetw=o&hvqmt=b&hvtargid=kwd-82533075230534%3Aloc-90&hydadcr=5653_2377271&tag=msndeskstdin-21&ref=pd_sl_6iluw3gs69_b" target="_blank">amazon link </a></h2>
+   <h1> <img src="https://img.freepik.com/free-photo/abstract-glowing-flame-drops-electric-illumination-generative-ai_188544-8092.jpg" alt="hello" title="pic" width="60px"></h1>
+   <ul>
+    <li>water</li>
+    <li>Tea</li>
+    <li>fruits</li>
+  </ul>
+  
+  <ol>
+    <li>rice</li>
+    <li>curry</li>
+    <li>curd</li>
+    
+  </ol>
+  <a href="https://www.youtube.com/">home</a>
+  <!-- <h6>bcdgh</h6> -->
+</body>
+</html>

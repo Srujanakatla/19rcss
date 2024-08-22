@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Specificity: 0001 (element selector) */
+        p {
+            color: black;
+            background-color: aqua;
+        }
+
+        /* Specificity: 0010 (class selector) */
+        .intro {
+            color: green;
+            background-color:pink;
+        }
+
+        /* Specificity: 0100 (ID selector) */
+        #highlight {
+            color: blue; 
+        }
+
+        /* Specificity: 0111 (ID + class + element) */
+       #highlight.intro p {
+            color: red;
+            background-color: cadetblue;
+        }
+
+        /* Descendant Combinator */
+        div p {
+            font-weight: bold;
+        }
+
+        /* Child Combinator */
+        div > p {
+            text-decoration: underline;
+        }
+
+        /* Adjacent Sibling Combinator */
+        div + p {
+            font-size: 1.2em;
+        }
+
+        /* General Sibling Combinator */
+        div ~ p {
+            background-color: yellow;
+        }
+        h2{
+            background-color: chartreuse;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Title</h2>
+        <h4 class="intro" id="highlight">This paragraph is highlighted.</h4>
+        <p>This is another paragraph.</p>
+    </div>
+    <p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+<span>span Paragraph</span>
+<p>Paragraph 5</p>
+</body>
+</html>
