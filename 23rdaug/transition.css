@@ -10,11 +10,12 @@ div:hover{
     width: 500px;
     height: 500px;
     border: 10px solid green;
-    transition-duration: 3s;
+    transition: all ease-in-out 3s 2s;
+/*     transition-duration: 3s;
     transition: 5s;
     border-radius: 20px;
     transition-delay: 2s;
-    transition-timing-function:ease-in-out;
+    transition-timing-function:ease-in-out; */
 }
 
 .div1{
@@ -29,11 +30,13 @@ div:hover{
     width: 500px;
     height: 500px;
     border: 10px solid pink;
-    transition-duration: 3s;
+    transition: all ease 3s 2s;
+     border-radius: 50px;
+/*     transition-duration: 3s;
     transition: 5s;
     border-radius: 50px;
     transition-delay: 2s;
-    transition-timing-function:ease;
+    transition-timing-function:ease; */
 }
 
 .div2{
