@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color:bisque;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+h2{
+    color: #0073e6;
+}
+.sell{
+    background-color: #f1f1f1;
+}
+.end{
+    padding: 0%;
+    margin: 0%;
+    text-align: end;
+    /* margin-top: 40px; */
+}
+
+.top-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seller {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.seller:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.seller img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.seller-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.seller-info h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.seller-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.top-sellers h2 {
+    margin-bottom: 20px;
+    color: #0073e6;
+}
+

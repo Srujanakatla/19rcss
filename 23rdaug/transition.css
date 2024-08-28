@@ -1,0 +1,183 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    transition-property:width;
+}
+
+div:hover{
+    width: 500px;
+    height: 500px;
+    border: 10px solid green;
+    transition-duration: 3s;
+    transition: 5s;
+    border-radius: 20px;
+    transition-delay: 2s;
+    transition-timing-function:ease-in-out;
+}
+
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+    border: 2px solid black;
+    transition-property:width;
+}
+
+.div1:hover{
+    width: 500px;
+    height: 500px;
+    border: 10px solid pink;
+    transition-duration: 3s;
+    transition: 5s;
+    border-radius: 50px;
+    transition-delay: 2s;
+    transition-timing-function:ease;
+}
+
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color:cornsilk;
+    border: 2px solid black;
+    transition-property:width;
+}
+
+.div2:hover{
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    transition-duration: 3s;
+    transition: 5s;
+    border-radius: 50px;
+    transition-delay: 2s;
+    transition-timing-function:ease-in;
+    box-shadow: 2px 3px 1px black;
+}
+.div3{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(purple pink green);
+    background-color:darkgreen;
+    border: 2px solid black;
+    transition-property:width;
+}
+
+.div3:hover{
+    width: 500px;
+    height: 500px;
+    border: 10px solid pink;
+    transition-duration: 3s;
+    transition: 5s;
+    border-radius: 50px;
+    transition-delay: 2s;
+    transition-timing-function:ease-out;
+    /* transform: rotateX('350 deg'); */
+    /* background: linear-gradient(purple pink green); */
+}
+.div4{
+    /* width:100px;
+    height: 100px;
+    border-color: aqua;
+    /* border-radius: 20px; */
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 0.5s ease-in-out 0.2s, ease 2s, background-color 0.5s linear;
+  }
+  .div4:hover {
+    /* transform: rotateZ('350deg'); */
+    width: 200px;
+    background-color: red;
+    background: linear-gradient(purple,pink,blue);
+}
+.div5{
+    background-color: chartreuse;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 2s;
+    transition-timing-function: ease-out;
+}
+
+.div5:hover{
+    transform: rotate('360deg');
+    border: 10px solid greenyellow;
+    width: 500px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(purple,pink,blue);
+    /* background-color: blue; */
+}
+.div6 {
+    width: 100px;
+    height: 100px;
+    background:blueviolet;
+    transition: width 2s;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;}
+  
+  .div6:hover {
+    width: 300px;
+  }
+
+  .div7 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(5px,10px);
+  }
+.div8{
+    margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(0.5,0.5);
+  transform: scaley(0.5);
+    /* transform: scale(0.5,0.5); */
+}
+
+#mydiv {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+  div#myDiv {
+    transform: skew(20deg);
+    background-color: cornsilk;
+  }
+  #mydiv1 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+  div#myDiv1 {
+    transform:skew(20deg,10deg);
+    background-color: chocolate;
+  }
+
+  #mydiv2 {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+  
+  div#myDiv2:hover {
+    transform:skewx(20deg);
+    background-color: brown;
+  }
