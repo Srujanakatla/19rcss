@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    text-shadow: 2px 2px black;
+    box-shadow: 2px 2px 2px pink;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: transform 0.5s ease;
+    transform: translate(20px);
+}
+.box:hover {
+    transform: translate(50px, 100px) rotate(15deg) scale(1.2) skew(50deg);
+}
