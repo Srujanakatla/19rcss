@@ -1,0 +1,21 @@
+.gallery-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+} 
+.gallery-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: #333;
+}
+
+.line {
+    width: 200px;
+    height: 10px;
+  background-image: linear-gradient(red, yellow, blue);
+    
+}
+
