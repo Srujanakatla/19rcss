@@ -60,7 +60,7 @@ body {
 }
 
 
-/* @media screen and (orientation: portrait) {
+ @media screen and (orientation: portrait) {
     body {
         background-color: lightblue;
     }
@@ -76,21 +76,20 @@ body {
     body {
         background-color: lightgreen;
     }
-} */
+} 
 
-
-/* @media screen and (min-resolution: 300dpi) {
+ @media screen and (min-resolution: 300dpi) {
     body {
         color: darkblue;
     }
-} */
+} 
 
 
-/* @media screen and (max-resolution: 150dpi) {
+@media screen and (max-resolution: 150dpi) {
     body {
         color: darkred;
     }
-} */
+} 
 
 
 @media print {
