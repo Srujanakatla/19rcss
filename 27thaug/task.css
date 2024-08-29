@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (orientation: portrait) {
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        background-color:burlywood;
+        color: darkred;
+    }
+    p{
+        background-color:deeppink;
+        color: coral;
+    }
+    img{
+        width: 80px;
+        transition: all 2s ease-in 3s;
+    }
+    img:hover{
+        background-color: brown;
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightgreen;
+    }
+    h1 {
+        background-color: cadetblue;
+        color: darkred;
+    }
+    p{
+        background-color: darkolivegreen;
+        color: coral;
+    }
+    img{
+        width: 80px;
+        transition: all 2s ease-in 3s;
+    }
+    img:hover{
+        background-color: blue;
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+
+
+
+/* @media screen and (min-resolution: 300dpi) {
+    body {
+        font-size: 18px;
+        background-color: brown;
+        color: darkblue;
+    }
+    h1 {
+        background-color: cadetblue;
+        color: darkred;
+    }
+    p{
+        background-color: darkolivegreen;
+        color: coral;
+    }
+    img{
+        width: 80px;
+        transition: all 2s ease-in 3s;
+    }
+    img:hover{
+        border-radius: 50px;
+    }
+} */
+@media print and (min-resolution: 300dpi) and (max-resolution: 450dpi){
+    body {
+        font-size: 12px;
+        background-color:darkmagenta;
+        color: pink;
+    }
+
+    h1 {
+        background-color: cadetblue;
+        color: darkred;
+    }
+    p{
+        background-color: darkolivegreen;
+        color: coral;
+    }
+    img{
+        width: 80px;
+        transition: all 2s ease-in 3s;
+    }
+    img:hover{
+        background-color: blueviolet;
+        padding: 20px;
+        border-radius: 50px;
+    }
+}
+@media screen and(orientation:portrait) and (min-resolution: 500dpi) {
+    body {
+        font-size: 12px;
+        background-color:chartreuse;
+        color: pink;
+    }
+
+    h1 {
+        background-color: cadetblue;
+        color: darkred;
+    }
+    p{
+        background-color: darkolivegreen;
+        color: coral;
+    }
+    img{
+        background-color: brown;
+        width: 80px;
+        transition: all 2s ease-in 3s;
+    }
+    img:hover{
+        border-radius: 50px;
+        background-color: chartreuse;
+        padding: 20px;
+    }
+}
+@media speech {
+    body {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+@media all and (min-width: 800px) {
+    body {
+        border: 2px solid black;
+    }
+}

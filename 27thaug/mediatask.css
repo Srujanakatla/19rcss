@@ -1,0 +1,129 @@
+/* Default styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Min-width: Applies styles if the viewport width is at least 600px */
+@media screen and (min-width: 600px) {
+    body {
+        background-color: lightyellow;
+        font-size: 18px;
+    }
+    h1{
+        background-color: blueviolet;
+    }
+    p{
+        background-color: chocolate;
+    }
+}
+
+/* Max-width: Applies styles if the viewport width is 599px or less */
+@media screen and (max-width: 599px) {
+    body {
+        background-color:deeppink;
+        font-size: 14px;
+    }
+    h1{
+        background-color:chartreuse;
+    }
+    p{
+        background-color:darkslategray;
+    }
+}
+
+/* Min-height: Applies styles if the viewport height is at least 500px */
+@media screen and (min-height: 500px) {
+    body {
+        padding: 50px;
+    }
+    h1{
+        background-color: blueviolet;
+    }
+    p{
+        background-color: chocolate;
+    }
+}
+
+/* Max-height: Applies styles if the viewport height is 499px or less */
+@media screen and (max-height: 499px) {
+    body {
+        padding: 10px;
+    }
+    h1{
+        background-color: blueviolet;
+    }
+    p{
+        background-color: chocolate;
+    }
+}
+
+/* Orientation: Applies styles based on the device orientation */
+/* @media screen and (orientation: portrait) {
+    body {
+        background-color: lightblue;
+    }
+    h1{
+        background-color:crimson;
+    }
+    p{
+        background-color:darkgreen;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightgreen;
+    }
+} */
+
+/* Min-resolution: Applies styles for high-resolution screens (300dpi or more) */
+/* @media screen and (min-resolution: 300dpi) {
+    body {
+        color: darkblue;
+    }
+} */
+
+/* Max-resolution: Applies styles for low-resolution screens (150dpi or less) */
+/* @media screen and (max-resolution: 150dpi) {
+    body {
+        color: darkred;
+    }
+} */
+
+/* Print: Styles specific for printed documents */
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    h1 {
+        color: darkgreen;
+    }
+}
+
+/* Speech: Styles specific for screen readers and other audio devices */
+@media speech {
+    body {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+/* All: Applies styles to all media types */
+@media all and (min-width: 800px) {
+    body {
+        border: 2px solid black;
+    }
+}
