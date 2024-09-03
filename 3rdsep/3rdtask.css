@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    color: #ededed;
+  } 
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideRight 0.5s ease forwards;
+  }
+  .navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+  }
+  .navbar a:hover {
+    color: #0ef;
+  }
+  .home {
+    position: relative;
+    width: 100%;
+    justify-content:space-between;
+    height: 100vh;
+    background-color: #001c32;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+  }
+  .home-content {
+    max-width: 500px;
+  }
+  .home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards 0.7s;
+  }
+  .home-content h3 span {
+    color: #0ef;
+    text-shadow: 2px 1px 30px #0ef;
+    border: 0 solid #0ef;
+
+  }
+  .image{
+    width: 90px;
+    animation: slideBottom 1s ease forwards 0.7s;
+  }
+  .home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards 1.8s;
+  }
+  .home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards 2s;
+  }
+  .home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50px;
+    color: #0ef;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards 2.2s;
+    margin: 30px 15px 30px 0;
+  }
+  .home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+  }
+  .btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 3px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease-in-out forwards 2.3s;
+    /* animation-delay: 2s; */
+    box-shadow: 0 0 5px #0ef, 0 0 20px #0ef;
+  }
+  .btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+      0 0 200px cyan;
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideTop {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  }
+  
+  .about-me-section{
+    background-color: #323f4b;
+  }
+  .about-me-section-sub-heading{
+    color: #cced00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .about-me-section-heading{
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .about-me-section-description{
+    color: #9aa5b1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+  }
+  
+  
+  .skills-section {
+    background-color: #1f2933;
+  }
+  .skills-section-sub-heading {
+    color: #cced00;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .skills-card {
+    background-color: #323f4b;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .skills-card-image {
+    width: 65px;
+    height: 65px;
+  }
+  .skills-card-title {
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #projects {
+    padding: 2rem;
+    background-color: #1f2933;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #323f4b;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+#contact{
+    margin-top: 5px;
+    text-align: center;
+    background-color: #1f2933;
+    padding: 10px;
+}
+#contact input{
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    background-color:#9aa5b1;
+}
+#contact input:hover{
+    background-color:#fff;
+}
+#contact P{
+    background-color:#0ef;
+    padding: 10px;
+    width: 50%;
+   margin: 1% auto;
+   cursor: pointer;
+}
+#contact P:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+footer{
+    /* background-color: #ededed; */
+       margin-top: 10px;
+    padding: 5% ;
+    font-size: 30px;
+} 
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+    footer .social-Links, footer .up-links{
+        display: flex;
+        justify-content: space-around;
+    } 
+
+  
+  .footer-section{
+    background-color: #0d2436;
+  }
+  .footer-section-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+  }
+  .footer-section-copyright-container{
+    text-align: center;
+    color: #ffffff;
+    background-color: #001c32;
+    padding: 10px;
+  }
+  .footer-section-text{
+    color: #9aa5b1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+  
