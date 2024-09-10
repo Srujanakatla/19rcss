@@ -1,0 +1,203 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    /* background-image: url('./strip-bg-05.jpg'); */
+    color:aliceblue;
+    margin-right: 15px;
+  }
+   .intro-section {
+    background-image: url('./strip-bg-04.jpg');
+    background-size: cover;
+      padding: 20px 0; 
+    /* position: relative;  */
+     color: darkgrey; 
+  }
+  
+  .intro-section  .curve-background {
+      background-color: aliceblue;
+ padding: 20px;
+width: 500px;
+height: 300px; 
+ /* position: absolute; */
+ top: 10px;
+margin: 0px;
+margin-left: 0%;
+border-top-left-radius: 0px;
+border-top-right-radius: 150px;
+border-bottom-right-radius: 150px;
+border-bottom-left-radius: 0px;
+font-size: 1rem;  
+  }
+ 
+  .services-section {
+    background-image: url('./strip-bg-02.jpg');
+    background-size: cover;
+    padding: 20px 0;
+  position: relative; 
+  color: darkgrey;
+  }
+  .services-section .curve-background {
+    background-color: aliceblue;
+    padding: 40px;
+    width: 500px;
+    height: 300px;
+    /* margin-left: 900px;  */
+    /* margin-left: 250px; */
+    border-top-left-radius: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 150px;
+      }
+      .curved-con h2{
+          margin-left: 20%;
+      }
+      .curved-con p {
+          font-size: 0.9rem;
+          margin: 20% 10%;
+      }
+      
+  
+  .about-section {
+    background-image: url('./strip-bg-03.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    color: darkgrey;
+  }
+  .about-section h2{
+    color: brown;
+  }
+  .about-section .curve-background {
+    background-color: aliceblue;
+padding: 20px;
+width: 500px;
+height: 300px;
+margin-right: 70px; 
+/* margin-left: 90px; */
+border-top-left-radius: 0px;
+border-top-right-radius: 150px;
+border-bottom-right-radius: 150px;
+border-bottom-left-radius: 0px;
+  }
+  .curved-con h2{
+      margin-left: 7%;
+  }
+  .curved-con p {
+      font-size: 0.9rem;
+      margin: 2% 7%;
+  }
+  .contact-section {
+    background-image: url('./strip-bg-01.jpg');
+    background-size: cover;
+    padding: 20px 0;
+  position: relative; 
+  color: darkgrey;
+  }
+  .contact-section .curve-background{
+    background-color: aliceblue;
+    padding: 40px;
+    width: 500px;
+    height: 300px;
+    margin-left: 20px;
+    /* margin-left: 900px;  */
+    
+    border-top-left-radius: 150px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 150px;
+  }
+  footer {
+    padding: 20px 0;
+    color: darkgrey;
+  }
+  /* General Styles */
+/* /
+/* Media Queries */
+
+/* For Mobile Devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .intro-section .curve-background,
+  .services-section .curve-background,
+  .about-section .curve-background,
+  .contact-section .curve-background {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .intro-section {
+    padding: 10px 0;
+  }
+
+  .container-fluid {
+    padding: 0 10px;
+  }
+}
+
+/* For Tablets (min-width: 601px and max-width: 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .intro-section .curve-background,
+  .services-section .curve-background,
+  .about-section .curve-background,
+  .contact-section .curve-background {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 10px;
+  }
+
+  .col-lg-6 {
+    margin-bottom: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+
+/* For Laptops and Desktops (min-width: 993px) */
+@media only screen and (min-width: 993px) {
+  .intro-section .curve-background,
+  .services-section .curve-background,
+  .about-section .curve-background,
+  .contact-section .curve-background {
+    width: 500px;
+    height: 300px;
+    padding: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .intro-section {
+    padding: 20px 0;
+  }
+
+  .col-lg-6 {
+    margin-bottom: 0;
+  }
+}

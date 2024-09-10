@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: aliceblue;
+    margin-right: 15px;
+  }
+  
+  .intro-section {
+    background-image: url('./strip-bg-04.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    color: darkgrey;
+  }
+  
+  .intro-section .curve-background {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 0px;
+    font-size: 1rem;
+  }
+  
+  .curve-background h2 {
+    margin-left: 7%;
+  }
+  
+  .curve-background p {
+    font-size: 0.9rem;
+    margin: 2% 7%;
+  }
+  
+  .services-section {
+    background-image: url('./strip-bg-02.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    position: relative;
+    color: darkgrey;
+  }
+  
+  .services-section .curve-background {
+    background-color: aliceblue;
+    padding: 40px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 150px;
+  }
+  
+  .curved-con h2 {
+    margin-left: 20%;
+  }
+  
+  .curved-con p {
+    font-size: 0.9rem;
+    margin: 20% 10%;
+  }
+  
+  .about-section {
+    background-image: url('./strip-bg-03.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    color: darkgrey;
+  }
+  
+  .about-section h2 {
+    color: brown;
+  }
+  
+  .about-section .curve-background {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 0px;
+  }
+  .contact-section {
+    background-image: url('./strip-bg-01.jpg');
+    padding: 10px 0;
+    color: darkgrey;
+  }
+  .contact-section .curve-background {
+    background-color: aliceblue;
+    padding: 40px;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 150px;
+  }
